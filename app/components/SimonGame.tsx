@@ -76,7 +76,7 @@ export default function SimonGame({ onGameOver }: SimonGameProps) {
             key={color}
             data-color={color}
             onClick={() => handleColorClick(color)}
-            className={`w-32 h-32 rounded-full ${color === 'red' ? 'bg-red-500' : color === 'blue' ? 'bg-blue-500' : color === 'green' ? 'bg-green-500' : 'bg-yellow-500'} opacity-60 hover:opacity-100 transition-opacity`}
+            className={`w-32 h-32 rounded-full ${color === 'red' ? 'bg-red-500' : color === 'blue' ? 'bg-blue-500' : color === 'green' ? 'bg-green-500' : 'bg-yellow-500'} opacity-60 `}
           />
         ))}
       </div>
