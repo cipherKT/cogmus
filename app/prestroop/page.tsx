@@ -38,7 +38,7 @@ export default function StroopTest() {
     setCurrentWord(randomWord);
   };
 
-  const handleGuess = (color: any) => {
+  const handleGuess = (color: string) => {
     if (color === currentColor) {
       setScore(score + 1);
     }
@@ -47,10 +47,10 @@ export default function StroopTest() {
 
   const handleGameOver = () => {
     alert(`Game Over! Your final score is ${score}.`);
-    router.push('/prequestions'); // Redirect to the pre-questions page
+    router.push('/prequestions');
   };
 
-  const getButtonColor = (color: any) => {
+  const getButtonColor = (color: string) => {
     switch (color) {
       case 'red': return 'bg-red-500 hover:bg-red-700';
       case 'blue': return 'bg-blue-500 hover:bg-blue-700';
@@ -123,4 +123,3 @@ export default function StroopTest() {
     </div>
   );
 }
-

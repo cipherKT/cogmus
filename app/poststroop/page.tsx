@@ -38,7 +38,7 @@ export default function StroopTest() {
     setCurrentWord(randomWord);
   };
 
-  const handleGuess = (color: any) => {
+  const handleGuess = (color: string) => {
     if (color === currentColor) {
       setScore(score + 1);
     }
@@ -50,7 +50,7 @@ export default function StroopTest() {
     router.push('/postquestions');
   };
 
-  const getButtonColor = (color: any) => {
+  const getButtonColor = (color: string) => {
     switch (color) {
       case 'red': return 'bg-red-500 hover:bg-red-700';
       case 'blue': return 'bg-blue-500 hover:bg-blue-700';
